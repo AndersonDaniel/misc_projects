@@ -1,0 +1,83 @@
+* {
+	font: 20px Tahoma, sans-serif;
+	color: #F1E454;}
+
+body {
+	background: url(../pics/map.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-position: 50% 0%;*/
+	height: 3250px;
+}
+
+.ook {
+	width: 10px;
+	height: 10px;
+	background: rgba(200, 100, 250, 0.8);
+	position: absolute;
+	border-radius: 50px;
+	margin: -5px;
+}
+
+	.ook:hover {
+		background: rgba(100, 200, 250, 0.8);
+		width: 30px;
+		height: 30px;
+		margin: -15px;
+	}
+
+.shtut {
+	border: 2px solid gold;
+}
+
+.button {
+	background: rgba(100, 100, 200, 1)
+}
+
+svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0 0;
+	padding: 0 0;
+	z-index: -2;
+}
+
+#ookSVG {
+	z-index: -1;
+}
+
+#loader {	
+	text-align: center;
+	font-size: 22px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	height: 150px;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: rgba(100, 200, 250, 0.7);
+	color: rgb(80, 80, 80);
+	border-radius: 10px;
+}
+
+	#loader div {
+		position: relative;
+		-webkit-animation: myanim 2s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function:linear;
+		width: 24px;
+		height: 24px;
+		top: 25%;
+		margin: auto auto;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background: url("../pics/loading.png");
+	}
+
+	@-webkit-keyframes myanim {
+		0%		{ -webkit-transform: rotate(0deg); }
+		50%		{ -webkit-transform: rotate(180deg); }
+		100%	{ -webkit-transform: rotate(360deg); }
+	}

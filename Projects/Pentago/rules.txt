@@ -1,0 +1,8 @@
+Welcome to Pentago!
+Rules of the Game:
+------------------
+
+The game is composed of four boards, each containing nine places for spheres. Each player, in his turn, places a sphere in one unoccupied place, and turns one of the boards 90 degrees, either clockwise or counter-clockwise. When it's time to turn, the left mouse key turns the board counter-clockwise, and the right turns it clockwise.
+The game continues so, until one player has managed to get 5 of his spheres arrayed in one line, column or diagonal, which makes him the winner.
+
+Enjoy! :)

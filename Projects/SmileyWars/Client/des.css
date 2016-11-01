@@ -1,0 +1,187 @@
+html {
+	background-color: #00b2ee
+}
+
+body {
+	position: relative;
+}
+
+.smiley {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: url(anger.png);
+	background-size: 100%;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.smiley:after {
+	position: absolute;
+	bottom: -5px;
+	width: 35px;
+	height: 12px;
+	content: "";
+	border-radius: 50px;
+	z-index: -1;
+}
+
+.button {
+	background: rgba(120, 120, 120, 120);
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+	.button:hover {
+		background: rgba(160, 160, 160, 160);
+	}
+
+	.button * {
+		position: relative;
+		top: 30%
+	}
+	
+#code {
+	position: absolute;
+	background: rgba(100, 100, 100, 0.85);
+	border-radius: 10px;
+	bottom: 0;
+	height: 200px;
+	width: 99%;
+	border-color: #deaa20;
+	border-width: 5px;
+	border-style: solid;
+}
+	#code textarea {
+		margin: 1px 1px;
+		padding: 0 0;
+		resize: none;
+		background: rgba(58, 124, 202, 0.5);
+		position: absolute;
+		color: white;
+		border: none;
+		bottom: 0;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+	
+		#code textarea:disabled {
+			/*background: rgba(80, 80, 80, 0.85);*/
+			background: none;
+		}
+	
+#apply {
+	position: absolute;
+	bottom: 2px;
+	right: 2px;
+	border-radius: 50px;
+	background: rgba(100, 200, 100, 0.9);
+}
+	#apply:hover {
+		background: rgba(120, 220, 120, 0.9);
+	}
+	
+#add {
+	position: absolute;
+	bottom: 2px;
+	right: 50px;
+	border-radius: 50px;
+}
+
+.red:after {
+	background: rgba(240,0,0,0.9);
+}
+
+.blue:after {
+	background: rgba(0,0,240,0.9);
+}
+
+.green:after {
+	background: rgba(0,240,0,0.9);
+}
+
+.black:after {
+	background: rgba(0,0,0,0.9);
+}
+
+.orange:after {
+	background: rgba(248,137,75,0.9);
+}
+
+.pink:after {
+	background: rgba(255,196,228,0.9);
+}
+
+.brown:after {
+	background: rgba(139,105,20,0.9);
+}
+
+.gold:after {
+	background: rgba(248,215,65,0.9);
+}
+
+.error:before {
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	content: "!";
+	height: 12px;
+	width: 12px;
+	background: rgba(255, 75, 75, 1);
+	border-radius: 5px;
+	font-size: 11px;
+	color: white;
+	text-align: center;
+}
+
+.selected:after {
+	border: 2px solid white;
+	margin-left: -2px;
+	margin-bottom: -2px;
+}
+
+.bullet {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	border-radius: 10px;
+}
+
+.b_red {
+	background: rgba(240, 0, 0, 1);
+}
+
+.b_blue {
+	background: rgba(0, 0, 240, 1);
+}
+
+.b_green {
+	background: rgba(0,240,0,1);
+}
+
+.b_black {
+	background: rgba(0,0,0,1);
+}
+
+.b_orange {
+	background: rgba(248,137,75,1);
+}
+
+.b_pink {
+	background: rgba(255,196,228,1);
+}
+
+.b_brown {
+	background: rgba(139,105,20,1);
+}
+
+.b_gold {
+	background: rgba(248,215,65,1);
+}

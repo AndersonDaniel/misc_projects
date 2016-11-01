@@ -1,0 +1,9 @@
+import os, BaseHTTPServer, SimpleHTTPServer;
+
+print('hello world!');
+
+server = BaseHTTPServer.HTTPServer(('', 8080), SimpleHTTPServer.SimpleHTTPRequestHandler);
+
+server.serve_forever();
+
+os.system('PAUSE');
