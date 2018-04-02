@@ -34,7 +34,7 @@ def SaveDivisionToFile(dicDivision, strIDField):
 	objFile.write('\n'.join([str(s[strIDField]) + ',' + str(s['#']) for s in functools.reduce(lambda l1,l2: l1+l2, [[{strIDField: s[strIDField], '#': k} for s in v] for k,v in dicDivision.items()])]))
 	objFile.close()
 
-# Divides the students to the number of required divisions, and then save the results to a file.
+# Divides the students to the number of required divisions, and then saves the results to a file.
 def DivideCourses(data, divisions):
 	# Get data matrix from the text. The text contains lines of students, with a comma between each two criteria values.
 	# The first line contains the names of the criteria.
