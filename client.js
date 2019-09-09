@@ -8,9 +8,11 @@ function connect() {
 				console.log('Received: ', data);
 			});
 			
+			var t1 = new Date();
 			conn.send('Hello, host!');
 			window.addEventListener('deviceorientation', function(event) {
-				conn.send(JSON.stringify({alpha: event.alpha, beta: event.beta, gamma: event.gamma}));
+				var t2 = new Date();
+				conn.send(JSON.stringify({alpha: event.alpha, beta: event.beta, gamma: event.gamma, dt_ms: t2 - t1}));
 			}, true);
 
 		});
