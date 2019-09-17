@@ -1,5 +1,4 @@
-function connect() {
-	var remote_id = document.getElementById("remote_id").value;
+function connect(remote_id) {
 	var peer = new Peer();
 	peer.on('open', function(id) {
 		var conn = peer.connect(remote_id);
@@ -20,5 +19,5 @@ function connect() {
 }
 
 window.onload = function() {
-	console.log('ook client')
+	connect(window.location.hash.replace('#hid=', ''));
 }
